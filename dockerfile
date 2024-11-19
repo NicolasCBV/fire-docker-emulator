@@ -16,3 +16,4 @@ COPY cmd /home/node/app/cmd
 
 WORKDIR /home/node/app
 CMD [ "./cmd/run.sh" ]
+
