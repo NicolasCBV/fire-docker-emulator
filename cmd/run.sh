@@ -1,2 +1,2 @@
-./cmd/buildFirebaseConfig.sh
+/home/node/cmd/buildFirebaseConfig.sh
 firebase emulators:start

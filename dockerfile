@@ -12,8 +12,8 @@ RUN apk add nodejs-current=21.7.3-r0 --no-cache && \
 	mkdir -p /home/node/app
 
 COPY app /home/node/app
-COPY cmd /home/node/app/cmd
+COPY cmd /home/node/cmd
 
 WORKDIR /home/node/app
-CMD [ "./cmd/run.sh" ]
+CMD [ "/home/node/cmd/run.sh" ]
 
