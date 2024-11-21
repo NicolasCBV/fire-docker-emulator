@@ -10,6 +10,11 @@
     "rules": "database.rules.json"
   },
   "emulators": {
+    "ui": {
+      "enabled": true,
+      "port": 4000,
+      "host": "0.0.0.0"
+    },
     "auth": {
       "port": 9099,
       "host": "0.0.0.0"
