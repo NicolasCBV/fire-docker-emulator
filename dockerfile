@@ -4,7 +4,8 @@ LABEL maintainer="Nícolas Basilio"
 ENV PNPM_HOME="/pnpm"
 ENV PATH="${PNPM_HOME}:${PATH}"
 
-RUN apk add nodejs-current=21.7.3-r0 --no-cache && \
+RUN apk update && \
+	apk add nodejs-current=21.7.3-r0 --no-cache && \
 	corepack enable pnpm && \
 	corepack use pnpm@latest-9 && \
 	pnpm config set store-dir .pnpm-store && \
